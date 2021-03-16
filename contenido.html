@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina:
+autor: Mario Castillo
+fecha: Marzo 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>Titulo en Etiqueta del Navegador</title>
+	
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	
+	<!-- una hoja de estilos externa-->
+	
+	<!-- una hoja de estilos personalizada-->
+	<link href="00-modelo.css" rel="stylesheet"/>
+	
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+		*{
+		  box-sizing: border-box;
+		  padding: 0;
+		  margin: 0;
+		}
+		
+		body{
+			background-color:rgba(0,0,0,0.2);
+		}
+		
+		.navbar {
+		  overflow: hidden;
+		  background-color: #333;
+		}
+		#mensaje{
+			float:right;
+			color:white;
+			text-align:center;
+			padding-top: 120px;
+			padding-right:10px;
+		}
+		
+		.navbar a {
+		  float: left;
+		  font-size: 16px;
+		  color: white;
+		  text-align: center;
+		  padding: 63px 16px;
+		  text-decoration: none;
+		}
+		
+		.navbar a:hover, .dropdown:hover .dropbtn {
+		  background-color: rgba(0,255,255,0.7);
+		}
+		
+		.navbar2 {
+		  overflow: hidden;
+		  background-color: #333;
+		  display:block;
+		}
+
+		.navbar2 a {
+		  width:100%;
+		  float: left;
+		  font-size: 16px;
+		  color: white;
+		  text-align: center;
+		  padding: 60.7px 50px;
+		  text-decoration: none;
+		}
+		
+		.navbar2 a:hover, .dropdown:hover .dropbtn {
+		  background-color: rgba(0,255,255,0.7);
+		}
+
+		a:active {
+			color:yellow;
+		}
+		
+		.marco {
+		  display: grid;
+		  border-style: solid;
+		  border-color: red;
+		  grid-template-columns: 250px auto;
+		  grid-template-rows: 150px 40px auto 40px;
+		  grid-gap: 10px;
+		  width: 100vw;
+		  height: 100vh;
+		}
+		
+		.encabezado {
+		  border-style: solid;
+		  background-color:grey;
+		  border-color: blue;
+		  grid-column: 1 / span 2;
+		  grid-row: 1 / span 1;
+		}
+		
+		.migas {
+		  text-align:center;
+		  border-style: solid;
+		  border-color: yellow;
+		  grid-column: 1 / span 2;
+		  grid-row: 2 / span 1;
+		}
+		
+		.lado {
+		  height:auto;
+		  overflow:auto;
+		  border-style: solid;
+		  border-color: violet;
+		  grid-column: 1 / span 1;
+		  grid-row: 3 / span 1;
+		}
+		
+		.contenido {
+		  height:auto;
+		  overflow:auto;
+		  border-style: solid;
+		  border-color: violet;
+		  grid-column: 2 / span 1;
+		  grid-row: 3 / span 1;
+		}
+		
+		.pie {
+		  background-color:black;
+		  border-style: solid;
+		  border-color: aqua;
+		  grid-column: 1 / span 2;
+		  grid-row: 4 / span 1;
+		}
+		
+		#correo{
+			color:rgba(0,205,205,1);
+			padding:7px 5px;
+			float:left;
+			text-align:center;
+			font-size:1.1em;
+			
+		}
+		#año{
+			float:right;
+			padding:5px 5px;
+			text-align:right;
+			font-size:1.3em;
+			color:rgba(255,0,0,0.5);
+		}
+		
+		#mensaje{
+			text-align:center;
+		}
+		
+		#logo_incognito{
+			padding: 10px 10px;
+			float:left;
+			height:200px;
+			width:200px;
+			object-fit:cover;
+		}
+		
+		#titulo_noticia{
+			text-align:center;
+			padding-top:50px;
+		}
+		
+		#div_titulo{
+			padding-bottom:10%;
+		}
+		
+		#logo_incognito2{
+			padding: 10px 10px;
+			float:right;
+			height:200px;
+			width:200px;
+			object-fit:cover;
+		}
+		
+		#noticia_p1{
+			font-size:large;
+			text-align:justify;
+			padding-left:5px;
+			padding-right:5px;
+		}
+		
+		ul.breadcrumb {
+			height:100%;
+			padding:5px 16px;
+			list-style: none;
+			background-color: grey;
+		}
+		ul.breadcrumb li {
+			display: inline;
+			font-size: 18px;
+		}
+		ul.breadcrumb li+li:before {
+			padding: 8px;
+			color: black;
+			content: " > ";
+		}
+		ul.breadcrumb li a {
+			color: rgba(128,0,128,0.8);
+			text-decoration: none;
+		}
+		ul.breadcrumb li a:hover {
+			color: rgba(255,255,0,0.8);
+			text-decoration: underline;
+		}
+
+	</style>
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="00-modelo.js"></script>
+
+	
+	
+</head>
+
+
+<body>
+
+	<div class="marco">
+		<div class="encabezado">
+			<div class="navbar">
+				<a href="index.html">Inicio</a>
+				<a href="#">Actualidad</a>
+				<a href="#">Tendencias</a>
+				<a href="#">Blog</a>
+				<a href="#">Contactar</a>
+				<div id="mensaje"></div>
+				
+			</div>
+		</div>
+		<div class="migas">
+			<ul class="breadcrumb">
+				<li><a href="index.html">Página de Inicio</a></li>
+				<li>Actualidad</li>
+			</ul>
+		</div>
+		<div class="lado">
+			<div class="navbar2">
+				<a href="index.html">Inicio</a>
+				<a href="#">Actualidad</a>
+				<a href="#">Tendencias</a>
+				<a href="#">Blog</a>
+				<a href="#">Contactar</a>
+		
+			</div>
+		</div>
+		<div class="contenido">
+			<div id="div_titulo">
+				<img src="logo_incognito.png" id="logo_incognito">
+				<img src="logo_incognito.png" id="logo_incognito2">
+				<h1 id="titulo_noticia">Se estima la demanda a Google por recopilar datos en pestañas de incognito</h1>
+			</div>
+			<p id="noticia_p1">&nbsp &nbsp &nbsp &nbsp En california, un juzgado ha admitido a tramite una demanda colectiva contra Google por la recolilación de datos de usuarios durante el uso de pestañas de incógnito en su navegador.</br></br>
+			
+			&nbsp &nbsp &nbsp &nbsp Las pestañas de incógnito, son un tipo de pestañas especiales dedicadas a la mayor privacidad y seguridad del usuario ya que nuestro navegador no guardará información de navegación tal como el historial de navegación o coockies; no comparte datos con el navegador, no guarda información sobre páginas web, ni caché web, ni contraseñas, ni información de formularios u otros datos de sitios web, borrando éstas u otros archivos temporales cuando finalizamos la sesión(al cerrar la pestaña).</br></br>
+			
+			&nbsp &nbsp &nbsp &nbsp Y en principio, esto es así pero… El verano anterior fue presentada en el Tribunal Federal de San José, California, una demanda la cual se intentaba que fuese colectiva reclamando 5.000 millones de dólares por daños. En dicha demanda se acusaba a Google de mantener un <i>«negocio de seguimiento de datos generalizado»</i> por rastrear datos incluso si los usuarios que querían mayor privacidad usaban la pestaña de incógnito como herramienta para dicho fin.</br></br>
+			
+			&nbsp &nbsp &nbsp &nbsp La demanda decía en ella: <i>«Google, como empresa, no puede seguir participando en la recopilación encubierta y no autorizada de datos de prácticamente cualquier ciudadano estadounidense que utilice un ordenador o un teléfono»</i> incluyendo asi a muchísimas personas que usan el famoso modo incógnito para mayor privacidad sin saber que esto estaba ocurriendo y que se seguía tomando datos de su búsqueda y visitas a páginas web.</br></br>
+			
+			&nbsp &nbsp &nbsp &nbsp Google, como la gran empresa que es, se defendió diciendo que si bien las pestañas de incógnito no recopilan datos, se dice claramente a la apertura de ellas que las propias páginas web visitadas son capaces de ver tu actividad en ellas y, si se da el caso de que usen recopiladores de terceros, recopilar cierta información aunque más limitada.</br></br>
+			
+			&nbsp &nbsp &nbsp &nbsp Sea como fuere, ahora el tribunal ha admitido la demanda y la empresa anteriormente nombrada tendrá que enfrentarse a un juicio por supuesta violación de las leyes de privacidad de California y las normas federales sobre escucha. Recordemos que Google dijo recién empezado este año, que eliminaría las cookies de terceros y que planeaban reemplazarlas con otro método menos intrusivo aunque ello acarree una menor ganancia de parte del sector publicitario en la compañía. Dado que ahora la demanda sale hacia delante, puede que Google anticipe la introducción de este cambio para cuidarse de incidentes parecidos en el futuro.</br></br>
+			
+			&nbsp &nbsp &nbsp &nbsp <u><b><i>Conclusión:</i></b></u> Tal como se comenta más arriba, personalmente estaría a favor de esta demanda ya que, si bien se indica en las pestañas de incógnito que los sitios de terceros pueden saber si los has visitado o que puede ser visible tu historial de búsqueda si estás en un lugar como el colegio o tu empresa, no se indica que los sitios puedan guardar tales cosas como cookies, es más, hay un apartado específico en dichas pestañas dedicado a las cookies de terceros donde puedes bloquearlas o no. Si aún con esta opción activada para bloquearlas, los sitios son capaces de hacerlo, esto es ilegal y debería ser sancionado como tal.
+			</p>
+		</div>
+		<div class="pie">
+			<p id="correo">Email: correoInventado@CENECmalaga.com<p/>
+			<p id="año">&copy; 2021</p>
+		</div>
+	</div>
+<script>
+contador();
+
+function contador(){
+	if(sessionStorage.cont){
+		sessionStorage.cont = Number(sessionStorage.cont)+1;
+	}
+	else{
+		sessionStorage.setItem("cont", 1);
+	}
+
+	$("#mensaje").text('Has cargado ' + sessionStorage.cont + ' páginas del sitio');
+}
+</script>
+</body>
+</html>
